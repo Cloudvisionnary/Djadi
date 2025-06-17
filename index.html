@@ -171,13 +171,18 @@
             gap: 20px;
         }
 
-        .anomalies-item {
+        .anomaly-item {
             background: rgba(255,255,255,0.1);
             padding: 20px;
             border-radius: 10px;
             border-left: 4px solid #f39c12;
         }
-
+        .anomaly-item.clickable:hover {
+            transform: translateY(-3px);
+            background: rgba(255,255,255,0.15) !important;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }  
+        
         .solutions-section {
             background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
             color: white;
@@ -240,11 +245,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .anomalies-item.clickable:hover {
-            transform: translateY(-3px);
-            background: rgba(255,255,255,0.15) !important;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        }
     </style>
 </head>
 <body>
